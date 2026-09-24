@@ -1,0 +1,773 @@
+[
+  {
+    "id": "TC001",
+    "title": "Calculate a recommended dosage from valid inputs",
+    "description": "Verifies that a user can enter valid application inputs in the dosage calculator and receive a calculated dosage estimate.",
+    "category": "Application & Dosage Calculator",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to the application page"
+      },
+      {
+        "type": "action",
+        "description": "Select a valid application scenario"
+      },
+      {
+        "type": "action",
+        "description": "Fill in the dosage calculator with valid crop or plant parameters"
+      },
+      {
+        "type": "action",
+        "description": "Submit the dosage calculator form"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify a dosage result is displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the result can be used as application guidance"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC002",
+    "title": "Switch language and continue browsing in the chosen locale",
+    "description": "This verifies that a user can change the site language and keep browsing with the selected language applied across navigation.",
+    "category": "Multilingual Support (i18n)",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Change the site language to English"
+      },
+      {
+        "type": "action",
+        "description": "Click the link to view the catalog"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the interface remains in English"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the catalog page is displayed"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC003",
+    "title": "Navigate across the main site sections from the header",
+    "description": "This verifies that a visitor can use the global navigation to move between the core pages and see the expected page content.",
+    "category": "Navigation & Header",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Click the navigation link to the catalog page"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the catalog page content is displayed"
+      },
+      {
+        "type": "action",
+        "description": "Click the navigation link to the application page"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the application page content is displayed"
+      },
+      {
+        "type": "action",
+        "description": "Click the navigation link to the about page"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the about page content is displayed"
+      },
+      {
+        "type": "action",
+        "description": "Click the navigation link to the contacts page"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the contacts page content is displayed"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC004",
+    "title": "Switch the site language and continue browsing",
+    "description": "This verifies that a multilingual user can change the language and continue using the site with the selected language applied.",
+    "category": "Navigation & Header",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Select Ukrainian in the language switcher"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the visible navigation and page labels are shown in Ukrainian"
+      },
+      {
+        "type": "action",
+        "description": "Click the navigation link to the catalog page"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the catalog page content is displayed in the selected language"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC005",
+    "title": "Switch language and move from home to catalog",
+    "description": "Verifies that a user can change the site language and continue from the home page to the catalog while keeping the selected language available across navigation.",
+    "category": "Application & Dosage Calculator",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to the home page"
+      },
+      {
+        "type": "action",
+        "description": "Select the Ukrainian language"
+      },
+      {
+        "type": "action",
+        "description": "Click the link to view the catalog from the home page"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the catalog page is displayed in the selected language"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify product categories are displayed"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC006",
+    "title": "Open the voice advisor from the home page",
+    "description": "This verifies that the floating AI voice widget can be opened from the home page for buyer consultation.",
+    "category": "Conversational AI Voice Widget",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Open the floating voice advisor"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the voice assistant panel is displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the assistant is ready to accept a question"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC007",
+    "title": "Submit a wholesale inquiry successfully",
+    "description": "Verifies that a user can complete the wholesale inquiry form on the contacts page and see a successful submission confirmation.",
+    "category": "Contact & Inquiry Form",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to the contacts page"
+      },
+      {
+        "type": "action",
+        "description": "Fill in the required contact details with valid information"
+      },
+      {
+        "type": "action",
+        "description": "Fill in the wholesale inquiry details with valid information"
+      },
+      {
+        "type": "action",
+        "description": "Submit the inquiry form"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify a submission confirmation is visible"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC008",
+    "title": "View all core product categories in the catalog",
+    "description": "This verifies that a shopper can open the catalog and inspect the full set of product categories and their product information.",
+    "category": "Product Catalog",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /catalog"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the product categories are displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the core product offerings are displayed"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC009",
+    "title": "Browse application scenarios and guidance",
+    "description": "Verifies that a user can open the application page, switch between application scenarios, and see the instructions and guidance update accordingly.",
+    "category": "Application & Dosage Calculator",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to the application page"
+      },
+      {
+        "type": "action",
+        "description": "Select a forestry application scenario"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify application instructions are displayed for the selected scenario"
+      },
+      {
+        "type": "action",
+        "description": "Select a horticulture application scenario"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the guidance updates for the new scenario"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC010",
+    "title": "Keep the selected language after moving to another page",
+    "description": "This verifies that a user can switch to Bulgarian and see the choice persist when navigating to a different page.",
+    "category": "Multilingual Support (i18n)",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Change the site language to Bulgarian"
+      },
+      {
+        "type": "action",
+        "description": "Click the link to view the about page"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the interface remains in Bulgarian"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the about page is displayed"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC011",
+    "title": "Keep language selection while moving between pages",
+    "description": "Verifies that a user can change the site language on one page and continue browsing other pages with the selected language preserved.",
+    "category": "About & Scientific Verification",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to the home page"
+      },
+      {
+        "type": "action",
+        "description": "Select the Bulgarian language"
+      },
+      {
+        "type": "action",
+        "description": "Click the link to the About page"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the About page is displayed in the selected language"
+      },
+      {
+        "type": "action",
+        "description": "Click the link to the Contacts page"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the Contacts page is displayed in the selected language"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC012",
+    "title": "Open the catalog from the home hero call to action",
+    "description": "This verifies that a visitor can start on the home page and reach the catalog through the primary discovery action.",
+    "category": "Home & Hero Section",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Click the hero call to action that opens the catalog"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the product catalog page is displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify product categories are displayed"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC013",
+    "title": "Get consultation guidance from the voice advisor",
+    "description": "This verifies that a user can ask the voice advisor a product or bulk-order question and receive a helpful consultation response.",
+    "category": "Conversational AI Voice Widget",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Open the floating voice advisor"
+      },
+      {
+        "type": "action",
+        "description": "Ask a question about bulk ordering"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify a consultation response is displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the conversation remains open for follow-up"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC014",
+    "title": "Inspect an industrial bulk product and its packaging details",
+    "description": "This verifies that a buyer can review industrial bulk packaging and product summary information in the catalog.",
+    "category": "Product Catalog",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /catalog"
+      },
+      {
+        "type": "action",
+        "description": "Select an industrial bulk product card"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the product detail view is displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify packaging and intended use details are displayed"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC015",
+    "title": "View company details on the contacts page",
+    "description": "Verifies that a user can open the contacts page and review the company phone number, email, and headquarters address.",
+    "category": "Contact & Inquiry Form",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to the contacts page"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify company contact details are displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the headquarters address is displayed"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC016",
+    "title": "Switch product categories in the catalog",
+    "description": "This verifies that a visitor can change catalog categories and see the product list update accordingly.",
+    "category": "Product Catalog",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /catalog"
+      },
+      {
+        "type": "action",
+        "description": "Select a different product category"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the catalog content updates to the selected category"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the products for that category are displayed"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC017",
+    "title": "Review About page verification content and return to navigation",
+    "description": "Verifies that a user can read the About page sections for history, ecological impact, patents, and lab testing, then continue navigating to other sections.",
+    "category": "About & Scientific Verification",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to the About page"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify company history content is displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify ecological impact content is displayed"
+      },
+      {
+        "type": "action",
+        "description": "Click the link to the patents section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify patent verification content is displayed"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC018",
+    "title": "Continue to contact options when the voice advisor cannot fully resolve a question",
+    "description": "This verifies that a user can receive fallback guidance from the voice assistant and then proceed to the contact page for direct inquiry.",
+    "category": "Conversational AI Voice Widget",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Open the floating voice advisor"
+      },
+      {
+        "type": "action",
+        "description": "Ask a question that requires direct contact follow-up"
+      },
+      {
+        "type": "action",
+        "description": "Click the link or action that continues to the contact page"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the contact page is displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify company contact details are visible"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC019",
+    "title": "Launch the brand video from the home hero",
+    "description": "This verifies that the home page can direct a visitor into the brand video content from the hero section.",
+    "category": "Home & Hero Section",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Click the hero video call to action"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the video content opens or is displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the home page navigation remains available"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC020",
+    "title": "Show validation errors for incomplete inquiry details",
+    "description": "Verifies that the inquiry form shows validation feedback when required fields are missing and allows resubmission after correction.",
+    "category": "Contact & Inquiry Form",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to the contacts page"
+      },
+      {
+        "type": "action",
+        "description": "Submit the inquiry form without completing the required fields"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify form validation feedback is visible"
+      },
+      {
+        "type": "action",
+        "description": "Fill in the missing required contact and inquiry fields with valid information"
+      },
+      {
+        "type": "action",
+        "description": "Submit the inquiry form"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify a submission confirmation is visible"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC021",
+    "title": "Browse featured products on the home showcase",
+    "description": "This verifies that the home page showcases featured products and lets a visitor continue into product discovery.",
+    "category": "Home & Hero Section",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the featured product showcase"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify featured product items are displayed"
+      },
+      {
+        "type": "action",
+        "description": "Click a featured product or continuation action"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify a product discovery page or section is displayed"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC022",
+    "title": "Show validation errors for incomplete dosage input",
+    "description": "Verifies that the dosage calculator blocks submission when required inputs are missing or invalid and then accepts corrected values.",
+    "category": "Application & Dosage Calculator",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to the application page"
+      },
+      {
+        "type": "action",
+        "description": "Select a valid application scenario"
+      },
+      {
+        "type": "action",
+        "description": "Submit the dosage calculator form without completing the required inputs"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify dosage validation feedback is visible"
+      },
+      {
+        "type": "action",
+        "description": "Fill in the missing required dosage inputs with valid values"
+      },
+      {
+        "type": "action",
+        "description": "Submit the dosage calculator form"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify a dosage result is displayed"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC023",
+    "title": "Open home from global navigation after visiting About",
+    "description": "Verifies that a user can leave the About page through global navigation and return to the home page without losing access to the main site sections.",
+    "category": "About & Scientific Verification",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to the About page"
+      },
+      {
+        "type": "action",
+        "description": "Click the link to the home page from global navigation"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the home page is displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the main site navigation is available"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC024",
+    "title": "Show an empty state when catalog data is unavailable",
+    "description": "This verifies that the catalog remains usable and shows an empty state when product content cannot be rendered.",
+    "category": "Product Catalog",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /catalog"
+      },
+      {
+        "type": "action",
+        "description": "Open a catalog view with unavailable or malformed product content if available"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify an empty state or fallback message is displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify site navigation remains available"
+      }
+    ],
+    "priority": "Low"
+  },
+  {
+    "id": "TC025",
+    "title": "Stay on a supported language when an unsupported locale is chosen",
+    "description": "This verifies that selecting an unsupported language does not break the site and the interface remains readable in a supported language.",
+    "category": "Multilingual Support (i18n)",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Attempt to switch to an unsupported language"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the site continues displaying in a supported language"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify global navigation remains available"
+      }
+    ],
+    "priority": "Low"
+  },
+  {
+    "id": "TC026",
+    "title": "Open a missing route and keep site navigation available",
+    "description": "This verifies that an invalid route is handled safely and the site shell remains usable for further navigation.",
+    "category": "Navigation & Header",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Attempt to open an invalid route"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify a not-found state is displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify site navigation remains available"
+      }
+    ],
+    "priority": "Low"
+  },
+  {
+    "id": "TC027",
+    "title": "Handle voice permission or access issues without blocking site use",
+    "description": "This verifies that if voice access is unavailable, the widget shows a clear issue state and the user can still continue browsing normally.",
+    "category": "Conversational AI Voice Widget",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Open the floating voice advisor"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify a voice access or permission issue is visible"
+      },
+      {
+        "type": "action",
+        "description": "Continue to a different page using global navigation"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the destination page is displayed"
+      }
+    ],
+    "priority": "Low"
+  }
+]

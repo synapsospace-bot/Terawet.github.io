@@ -29,3 +29,5 @@ dist-ssr
 .env.development.local
 .env.test.local
 .env.production.local
+testsprite_tests/tmp/
+testsprite_tests/tmp/config.json
